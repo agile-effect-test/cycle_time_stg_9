@@ -1,0 +1,16 @@
+name: workflow_test1
+
+on:
+  workflow_dispatch:
+  
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: チェックアウトリポジトリ
+        uses: actions/checkout@v2
+
+      - name: ワークフロー完了
+        run: echo ワークフロー完了
